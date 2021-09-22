@@ -29,6 +29,12 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+// var coffeeOrder = function () {
+//     document.getElementById("coffees");
+//     coffeeOrder.innerHTML = coffees.reverse();
+// }
+
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -48,14 +54,13 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-var coffeeOrder = function() {
-    document.getElementById("coffees");
-}
-coffeeOrder.innerHTML=coffees.reverse();
-console.log(coffeeOrder);
+
 
 
 var tbody = document.querySelector('#coffees');
+
+
+
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 

@@ -47,8 +47,29 @@ function updateCoffees(e) {
 //     document.getElementById("coffees");
 //     coffeeOrder.innerHTML = coffees.reverse();
 // }
+var input = document.querySelector("input");
+var log = document.getElementById("coffees");
+input.addEventListener("input", updateCoffeeOrder);
+function coffeeOrder(coffees) {
+    var html2 = "";
+    for (var i = 1; i <= coffees.length; ++i) {
+        html2 += coffeeOrder(coffees[i]);
+    }
+    return html2;
+}
 
-
+function updateCoffeeOrder(e) {
+    e.preventDefault();
+    var textInput = updateCoffees
+    var searchInput = [];
+    coffees.forEach(function (coffee) {
+        if (textInput === updateCoffees) {
+            searchInput.push(coffee)
+        }
+        log.textContent = e.target.value;
+    });
+     coffeeOrder(searchInput);
+}
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [

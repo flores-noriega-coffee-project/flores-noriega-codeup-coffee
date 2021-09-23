@@ -1,25 +1,25 @@
 "use strict"
 
-// function renderCoffee(coffee) {
-//     var html = '<tr class="coffee">';
-//     html += '<td>' + coffee.id + '</td>';
-//     html += '<td>' + coffee.name + '</td>';
-//     html += '<td>' + coffee.roast + '</td>';
-//     html += '</tr>';
-//
-//     return html;
-// }
-
 function renderCoffee(coffee) {
-    var expectedResponse = coffees.preloadResponse("coffees");
-    var html = '<textarea class ="coffee">';
-    html += '<p>'+ coffee.roast + '</p>';
-    html += '<p>'+ coffee.name + '</p>';
-    html += '<textarea>' + coffee.id + '</textarea>';
-    html += '</textarea>';
+    var html = '<div class="coffee">';
+    // html += '<td>' + coffee.id + '</td>';
+    html += '<div>' + coffee.name + '</div>';
+    html += '<div class="text-left">' + coffee.roast + '</div>';
+    html += '</div>';
 
     return html;
 }
+
+// function renderCoffee(coffee) {
+//     var expectedResponse = coffees.preloadResponse("coffees");
+//     var html = '<textarea class ="coffee">';
+//     html += '<p>'+ coffee.roast + '</p>';
+//     html += '<p>'+ coffee.name + '</p>';
+//     html += '<textarea>' + coffee.id + '</textarea>';
+//     html += '</textarea>';
+//
+//     return html;
+// }
 
 
 

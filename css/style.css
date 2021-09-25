@@ -7,3 +7,11 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+.navbar{
+    background-color: #BBC796;
+}
+
+body{
+    font-family: 'Gemunu Libre', sans-serif;;
+    background-color: #f8f1b8;
+}

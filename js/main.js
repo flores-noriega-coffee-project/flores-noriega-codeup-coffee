@@ -83,12 +83,14 @@ function updateCoffees(e) {
             name: userCoffeeName.value,
             roast: userRoast.value
         });
-        console.log(addNewCoffee);
+        console.log(coffees);
         div.innerHTML = renderCoffees(coffees)
+        // coffees.addEventListener("click", addNewCoffee);
+        addCoffeeButton.addEventListener('click', addNewCoffee)
     }
 
     // addCoffeeButton.addEventListener('click', addNewCoffee)
-
+    // coffees.addEventListener("click", addNewCoffee);
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
     var coffees = [
@@ -119,6 +121,7 @@ function updateCoffees(e) {
 
     var roastSelection = document.querySelector('#roast-selection');
     var addCoffeeButton = document.getElementById('new-submit')
+
     tbody.innerHTML = renderCoffees(coffees);
 
 

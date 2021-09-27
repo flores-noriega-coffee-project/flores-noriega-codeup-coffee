@@ -39,7 +39,7 @@
 
     <div class="container text-left">
         <div class="row card">
-            <div class="coffee card-body" style="background-color:aliceblue ">
+            <div class="coffee-card-body" style="background-color:aliceblue ">
 <!--                <div>ID</div>-->
                 <div>ROAST</div>
                 <form>
@@ -71,22 +71,191 @@
                     </form>
                     <div class="form-group">
                         <div>NEW COFFEE</div>
-                        <input class="new-coffee" id="new-coffee"  placeholder="Enter your coffee">
+                        <input class="new-coffee" id="new-coffee"  placeholder="Enter your coffee"/>
                         <!--                <textarea class="coffee form-control" id="coffee"></textarea>-->
-                        </input>
                     </div>
-                    <input id="new-submit" type="submit" />
+                    <input id="new-submit" type="submit" onclick="addNewCoffee()"/>
                             </div>
                         </div>
                     </div>
                         <div class="card" style="width:100%">
                         <div id="coffees" class="card-text text-center" style="background-color: aliceblue">
+
 <!--                            Coffee List/Interface -->
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+<!--<section>-->
+<!--    &lt;!&ndash; CARD - 1 &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: Light City</h1><p>Roast: Light</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; CARD - 2 &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: Half City</h1><p>Roast: Light</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; CARD - 3 &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: Cinnamon</h1><p>Roast: Light</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; CARD - 4 &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: City</h1><p>Roast: Medium</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; CARD - 5 &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: American</h1><p>Roast: Medium</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; CARD - 6 &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: Breakfast </h1><p>Roast: Medium</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; CARD - 7 &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: High</h1><p>Roast: Dark</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; CARD - 8 &ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: Continental</h1><p>Roast: Dark</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;card -9&ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: New Orleans </h1><p>Roast: Dark</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;card -10&ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: European </h1><p>Roast: Dark</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;card -11&ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: Espresso</h1><p>Roast: Dark</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;card -12&ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: Viennese</h1><p>Roast: Dark</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;card -13&ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: Italian </h1><p>Roast: Dark</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;card -14&ndash;&gt;-->
+<!--    <div class="card">-->
+<!--        <div class="card-container">-->
+<!--            <div class="card-front">-->
+<!--                <img src="img/coffee-shop-logo.png" />-->
+<!--            </div>-->
+<!--            <div class="card-back"><h1>Coffee Name: French</h1><p>Roast: Dark</p>-->
+<!--                <button>Order</button>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
             <!--                <div>ID</div>-->
 
 <!--    <div class="container d-flex">-->

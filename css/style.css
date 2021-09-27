@@ -14,9 +14,11 @@ td, th {
 body{
     font-family: 'Gemunu Libre', sans-serif;;
     background-color: #f8f1b8;
+    background-image: url("/img/pexels-photo-1695052.jpeg");
+    /*background-repeat: repeat-x;*/
 }
-.carousel-item{
-
+.jumbotron-fluid{
+    background-image: url("/img/pexels-photo-1695052.jpeg");
 }
 /*.coffee-card-body{*/
 /*    margin-top: 50%;*/

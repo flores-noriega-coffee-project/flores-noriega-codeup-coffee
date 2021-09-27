@@ -1,0 +1,60 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50%;
+    justify-content: center;
+    /*height: 50%;*/
+}
+
+
+.card {
+    perspective: 1000px;
+    margin: 1rem;
+    background-color: aliceblue;
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+}
+.card-front {
+    position: center;
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+.card-back {
+    position: center;
+    grid-area: 1 / 1;
+    backface-visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.card-back h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-back p {
+    font-family: 'Gemunu Libre', sans-serif;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* FIX CARD IMAGES WIDTH */
+.card-container img {
+    /*height: 15rem;*/
+    width: 18rem;
+}
+.card:hover .card-container {
+    transform: rotateY(180deg);
+}
